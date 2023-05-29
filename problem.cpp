@@ -9,16 +9,43 @@ mt19937 rnd(chrono::steady_clock::now().time_since_epoch().count());
  
 typedef long long ll;
 typedef long double ld;
- 
-void solve() {
-    int a;
-    cin >> a;
-    cout << a << '\n';
+int di[4] = {0, 1, 0, -1};
+int dj[4] = {1, 0, -1, 0};
+
+template <class T>
+void PRINT(vector<vector<T>> v) {
+    for (auto a : v) {
+        for (auto b : a) {
+            cout << b << " ";
+        }
+        cout << '\n';
+    }
 }
+
+template <class T>
+void PRINT(vector<T> v) {
+    for (auto a : v) cout << a << " ";
+    cout << '\n';
+}
+
+void solve() {
+    int n;
+    cin >> n;
+
+}   
  
 int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
+
+    /*
+    solve(); 
+    #ifdef LOCAL
+        cerr << endl << "finished in " << clock() * 1.0 / CLOCKS_PER_SEC << " sec" << endl;
+    #endif
+    return 0; 
+    */
+
     TC(t) {
         #ifdef LOCAL
             cout << "__________________________" << endl;
