@@ -1,2 +1,5 @@
 favorites.txt
 *.out
+*.swp
+temp/
+/.cache
